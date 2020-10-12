@@ -1,3 +1,6 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 import tensorflow as tf
 from tensorflow import keras
 
@@ -57,6 +60,7 @@ def Test_2():
     model = keras.Sequential([
         keras.layers.Flatten(input_shape=(28, 28)),
         keras.layers.Dense(128, activation='relu'),
+
         keras.layers.Dense(10, activation='softmax')
     ])
 
