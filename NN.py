@@ -1,5 +1,7 @@
+#region [Ignore Learning Warning - CPU Version]
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+#endregion
 
 import tensorflow as tf
 from tensorflow import keras
